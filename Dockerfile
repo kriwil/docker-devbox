@@ -29,6 +29,7 @@ RUN curl -o ~/.tmux.conf https://raw.githubusercontent.com/kriwil/dotfiles/maste
 
 RUN curl -fLo ~/.config/nvim/init.vim --create-dirs https://raw.githubusercontent.com/kriwil/dotfiles/master/vimrc
 RUN curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+RUN vim +'PlugInstall --sync' +qa
 
 RUN chsh -s /bin/zsh 
 ENV TERM xterm-256color
