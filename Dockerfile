@@ -34,4 +34,4 @@ RUN vim +'PlugInstall --sync' +qa
 RUN chsh -s /bin/zsh 
 ENV TERM xterm-256color
 
-CMD ["tmux", "new", "-s", "default", "-d"]
+CMD ["tmux", "new", "-s", "default"]
