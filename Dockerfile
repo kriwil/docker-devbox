@@ -22,6 +22,7 @@ RUN pip3 install --user neovim jedi
 
 RUN curl -o ~/oh-my-zsh.tar.gz https://codeload.github.com/kriwil/oh-my-zsh/tar.gz/master
 RUN curl -o ~/.zshrc https://raw.githubusercontent.com/kriwil/dotfiles/master/zshrc.linux
+RUN curl -o ~/.gitconfig https://raw.githubusercontent.com/kriwil/dotfiles/master/gitconfig
 RUN tar zxvf ~/oh-my-zsh.tar.gz -C ~/ && mv ~/oh-my-zsh-master ~/.oh-my-zsh
 RUN rm ~/oh-my-zsh.tar.gz
 
