@@ -1,1 +1,1 @@
-docker run --rm -it kriwil/devbox
+docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock kriwil/devbox
